@@ -1,11 +1,10 @@
 import { useState } from 'react'
+import Header from './components/00_Header/Header'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      
+    <Header/>
     </>
   )
 }
