@@ -1,9 +1,10 @@
 import React from 'react'
-import Github from './Svg/Github.svg'
-import Linkedin from './Svg/Linkedin.svg'
-import StackOverflow from './Svg/StackOverflow.svg'
-import Twitter from './Svg/Twitter.svg'
-import Reddit from './Svg/Reddit.svg'
+import Github from './Svg/02_SocialProfileIcons/01_Github.svg'
+import Linkedin from './Svg/02_SocialProfileIcons/02_Linkedin.svg'
+import StackOverflow from './Svg/02_SocialProfileIcons/03_StackOverflow.svg'
+import Reddit from './Svg/02_SocialProfileIcons/04_Reddit.svg'
+import Twitter from './Svg/02_SocialProfileIcons/05_Twitter.svg'
+
 function SocialProfiles() {
   return (
     <div className='hidden md:block ml-auto '>

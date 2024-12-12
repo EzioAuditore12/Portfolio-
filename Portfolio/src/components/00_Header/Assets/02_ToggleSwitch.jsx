@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import Sun from "./Svg/Sun.svg";
-import Moon from "./Svg/Moon.svg";
+import Sun from "./Svg/01_ToggleIcons/Sun.svg";
+import Moon from "./Svg/01_ToggleIcons/Moon.svg";
 
 function ThemeSwitcher() {
   const [isDarkMode, setIsDarkMode] = useState(false);
