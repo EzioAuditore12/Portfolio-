@@ -14,7 +14,7 @@ function Header() {
 
   return (
     <>
-    <header className='flex gap-3 p-3'>
+    <header className='flex gap-3 p-3 bg-inherit'>
         <MenuIcon onClick={toggleSidebar}/>
         <ThemeSwitcher/>
         <SocialProfiles/>
