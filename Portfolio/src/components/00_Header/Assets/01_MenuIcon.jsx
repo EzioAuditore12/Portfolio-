@@ -4,7 +4,7 @@ function MenuIcon({ onClick }) {
   return (
     <svg
       onClick={onClick}
-      className="mt-1 h-[30px] w-[30px] cursor-pointer"
+      className="mt-1 h-[30px] w-[30px] cursor-pointer dark:fill-white"
       xmlns="http://www.w3.org/2000/svg"
       x="0px"
       y="0px"

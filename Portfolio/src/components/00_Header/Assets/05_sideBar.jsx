@@ -10,7 +10,7 @@ const menuItems = [
 
 export function ResponsiveSidebar({ isSidebarOpen, toggleSidebar }) {
   return (
-   <aside className={` bg-white-smoke shadow-[0_0_10px_rgba(0,0,0,0.3)] fixed h-16 w-full bottom-0 md:top-[25%] md:h-[400px] md:w-16 md:ml-2 md:rounded-mdtransform ${
+   <aside className={` bg-light-primary dark:bg-[#161D29] text-light-text dark:text-dark-text shadow-[0_0_10px_rgba(0,0,0,0.3)] fixed h-16 w-full bottom-0 md:top-[25%] md:h-[400px] md:w-16 md:ml-2 md:rounded-lg transform ${
    isSidebarOpen ? 'translate-y-0 translate-x-full md:hidden' : 'translate-y-0 translate-x-0'
    }`}>
 
@@ -23,7 +23,7 @@ export function ResponsiveSidebar({ isSidebarOpen, toggleSidebar }) {
       </div>
     );
   })}
-  <button onClick={toggleSidebar} className="hidden md:block text-black hover:text-gray-300">
+  <button onClick={toggleSidebar} className="hidden md:block hover:text-gray-300">
             ✕
   </button>
 </nav>  
