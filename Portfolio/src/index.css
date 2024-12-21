@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.sectionCSS{
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    border-radius: 0.375rem;
+    @media (min-width: 768px) {
+        width: 70vw;
+    }
+}
+
+.customButton{
+     @apply bg-gray-600 text-white text-2xl min-w-[200px] min-h-[45px] rounded-[200px]
+}
