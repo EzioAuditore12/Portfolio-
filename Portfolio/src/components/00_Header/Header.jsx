@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import MenuIcon from './Assets/01_MenuIcon'
 import ThemeSwitcher from './Assets/02_ToggleSwitch'
-import HireMeBtn from './Assets/03_HireMeBtn'
 import SocialProfiles from './Assets/04_socialProfiles'
 import { ResponsiveSidebar } from './Assets/05_sideBar';
+import ContactMeBtn from './Assets/03_ContactMeBtn'
 
 
 function Header() {
@@ -18,7 +18,7 @@ function Header() {
         <MenuIcon onClick={toggleSidebar}/>
         <ThemeSwitcher/>
         <SocialProfiles/>
-        <HireMeBtn/>
+        <ContactMeBtn/>
     </header>
   
     <ResponsiveSidebar isSidebarOpen={isSidebarOpen} toggleSidebar={toggleSidebar}/>

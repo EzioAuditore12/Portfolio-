@@ -7,7 +7,7 @@ import Twitter from './Svg/02_SocialProfileIcons/05_Twitter.svg'
 
 function SocialProfiles() {
   return (
-    <div className='hidden md:block ml-auto '>
+    <div className='hidden md:block mr-7 mx-auto'>
         <div className='flex items-center justify-center gap-2'>
         <img className='h-[40px] w-[40px]'src={Github}/>
         <img className='h-[35px] w-[40px]'src={Linkedin}/>

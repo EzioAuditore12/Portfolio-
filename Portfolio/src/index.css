@@ -3,15 +3,7 @@
 @tailwind utilities;
 
 .sectionCSS{
-    width: 90vw;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    align-items: center;
-    border-radius: 0.375rem;
-    @media (min-width: 768px) {
-        width: 70vw;
-    }
+    @apply w-[90vw] flex flex-col gap-4 items-center rounded-md md:w-[72vw] dark:border-dark-text bg-light-primary dark:bg-[#161D29] text-light-text dark:text-dark-text;
 }
 
 .customButton{

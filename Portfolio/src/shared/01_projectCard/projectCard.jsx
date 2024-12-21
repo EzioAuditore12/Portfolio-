@@ -6,7 +6,7 @@ function ProjectCard({
     projectSummary
 }) {
   return (
-    <div className='w-[95%] flex flex-col rounded-md gap-y-2 overflow-hidden'>
+    <div className='w-[95%] grid h-full rounded-md overflow-hidden'>
         <img className='object-cover h-[300px] w-full' src={projectImage}/>
         <h2 className='text-start'>{projectTitle}</h2>
         <p>{projectSummary}</p>

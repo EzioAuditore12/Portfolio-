@@ -1,11 +1,15 @@
 import React from 'react';
-
+import userIcon from './Svg/03_SideBarIcons/01_userIcon.svg';
+import projectIcon from './Svg/03_SideBarIcons/02_projectIcon.svg';
+import blogIcon from './Svg/03_SideBarIcons/03_blogIcon.svg';
+import resumeIcon from './Svg/03_SideBarIcons/04_resumeIcon.svg';
+import contactIcon from './Svg/03_SideBarIcons/05_contactIcon.svg';
 const menuItems = [
-  { name: 'About', href: '#', icon: '👤' },
-  { name: 'Projects', href: '#', icon: '💼' },
-  { name: 'Blog', href: '#', icon: '✏️' },
-  { name: 'Resume', href: '#', icon: '📄' },
-  { name: 'Contact', href: '#', icon: '💬' },
+  { name: 'About', href: '#', icon: userIcon},
+  { name: 'Projects', href: '#', icon: projectIcon },
+  { name: 'Blog', href: '#', icon: blogIcon },
+  { name: 'Resume', href: '#', icon: resumeIcon},
+  { name: 'Contact', href: '#', icon: contactIcon},
 ];
 
 export function ResponsiveSidebar({ isSidebarOpen, toggleSidebar }) {
@@ -18,7 +22,7 @@ export function ResponsiveSidebar({ isSidebarOpen, toggleSidebar }) {
   {menuItems.map((item) => {
     return (
       <div className='flex flex-col items-center cursor-pointer hover:text-gray-300' key={item.name}>
-        <span>{item.icon}</span>
+        <img className='h-[30px] w-[30px]' src={item.icon} alt={item.name} />
         <span>{item.name}</span>
       </div>
     );

@@ -13,16 +13,22 @@ function Section2() {
       name: 'Daksh',
       img:project1Img,
       psummary:"Hi my name is Daksh"
-    }
+    },
+    {
+      name: 'Manas',
+      img:project1Img,
+      psummary:"Hi my name is Manas"
+    },
+    
   ];
   
   return (
-    <div className='sectionCSS p-6 dark:border-dark-text bg-light-primary dark:bg-[#161D29] text-light-text dark:text-dark-text'>
+    <div className='sectionCSS p-6 '>
         <h1 className='text-3xl font-extrabold'>Featured Projects</h1>
         <p className='mb-4'>
           Here are some of my projects that I have worked on. Click on the project to view more details.
         </p>
-        <div className='grid place-items-center gap-y-4'>
+        <div className='grid place-items-center gap-y-4 md:grid-cols-2 '>
         {Projects.map((item, index) => {
           return(
             <ProjectCard 
