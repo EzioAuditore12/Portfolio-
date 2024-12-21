@@ -8,7 +8,6 @@ function App() {
     <div className='flex justify-center items-center'>
     <About/>
     </div>
-    
     </>
   )
 }
