@@ -1,11 +1,21 @@
-import React from 'react'
+import React from "react";
+import { useNavigate } from "react-router-dom";
 
 function ContactMeBtn() {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate("/contact");
+  };
+
   return (
-    <button className="ml-auto w-[110px] bg-red-400 rounded-[33px] text-white">
+    <button
+      onClick={handleClick}
+      className="ml-auto w-[110px] bg-red-400 rounded-[33px] text-white"
+    >
       Contact Me
     </button>
-  )
+  );
 }
 
-export default ContactMeBtn; 
+export default ContactMeBtn;
