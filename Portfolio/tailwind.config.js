@@ -7,6 +7,9 @@ export default {
   darkMode: 'class',
   theme: {
     extend: {
+      screens: {
+        'h-sm': { raw: '(max-height: 537px)' },
+      },
       colors: {
         light: {
           primary: '#F5F5F5',
