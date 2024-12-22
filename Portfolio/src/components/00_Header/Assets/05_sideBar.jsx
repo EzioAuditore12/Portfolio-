@@ -4,12 +4,13 @@ import projectIcon from './Svg/03_SideBarIcons/02_projectIcon.svg';
 import blogIcon from './Svg/03_SideBarIcons/03_blogIcon.svg';
 import resumeIcon from './Svg/03_SideBarIcons/04_resumeIcon.svg';
 import contactIcon from './Svg/03_SideBarIcons/05_contactIcon.svg';
+import { Link } from 'react-router-dom';
 const menuItems = [
-  { name: 'About', href: '#', icon: userIcon},
-  { name: 'Projects', href: '#', icon: projectIcon },
-  { name: 'Blog', href: '#', icon: blogIcon },
-  { name: 'Resume', href: '#', icon: resumeIcon},
-  { name: 'Contact', href: '#', icon: contactIcon},
+  { name: 'About', link: '/about', icon: userIcon},
+  { name: 'Projects', link: '/projects', icon: projectIcon },
+  { name: 'Blog', link: '/blog', icon: blogIcon },
+  { name: 'Resume', link: '/resume', icon: resumeIcon},
+  { name: 'Contact', link: '/contact', icon: contactIcon},
 ];
 
 export function ResponsiveSidebar({ isSidebarOpen, toggleSidebar }) {
@@ -19,14 +20,12 @@ export function ResponsiveSidebar({ isSidebarOpen, toggleSidebar }) {
    }`}>
 
 <nav className='flex p-2 items-center justify-evenly md:flex-col md:gap-3 h-sm:flex-row'>
-  {menuItems.map((item) => {
-    return (
-      <div className='flex flex-col items-center cursor-pointer hover:text-gray-300' key={item.name}>
-        <img className='h-[30px] w-[30px]' src={item.icon} alt={item.name} />
-        <span>{item.name}</span>
-      </div>
-    );
-  })}
+  {menuItems.map((item) => (
+    <Link to={item.link} key={item.name} className='flex flex-col items-center cursor-pointer hover:text-gray-300'>
+      <img className='h-[30px] w-[30px]' src={item.icon} alt={item.name} />
+      <span>{item.name}</span>
+    </Link>
+  ))}
   <button onClick={toggleSidebar} className="hidden h-sm:hidden md:block hover:text-gray-300">
             ✕
   </button>
