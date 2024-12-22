@@ -1,6 +1,6 @@
 import React from 'react'
 import profilePic from './Assets/profileImage.jpg'
-
+import {Link} from 'react-router-dom'
 function Section1() {
   return (
     <div className= 'sectionCSS p-4 mt-[60px] md:mt-[82px] '>
@@ -11,9 +11,9 @@ function Section1() {
      <p className='text-center'>
      I'm a beginner full-stack web developer with experience in React for front-end development and Express for back-end programming. Im passionate about learning new technologies and improving my skills to build dynamic, responsive web applications.
      </p>
-     <button className='customButton'>
-      View Resume &rarr;
-     </button>
+     <Link to="/resume">
+        <button className="customButton">View Resume &rarr;</button>
+      </Link>
     </div>
   )
 }
