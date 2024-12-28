@@ -51,17 +51,17 @@ function Projects() {
   );
 
   return (
-    <section className='min-h-screen p-4 transition-all duration-500 animate-slideInFromRight'>
-      <div className="max-w-6xl mx-auto">
+    <section className='w-[100vw] flex justify-center p-4 transition-all duration-500 animate-slideInFromRight mb-[55px] md:mb-2'>
+      <div className="w-full flex flex-col items-center">
         <input
           type="text"
           placeholder="Search projects..."
           value={searchQuery}
           onChange={handleSearch}
-          className="w-full p-2 mb-4 border rounded-md dark:bg-gray-700 dark:border-gray-600"
+          className="w-full md:w-[60%] p-2 mb-4 border rounded-md dark:bg-gray-700 dark:border-gray-600"
         />
         
-        <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+        <div className=" sectionCSS p-2 w-full grid grid-cols-1 gap-8 place-items-center">
           {filteredProjects.map(project => (
             <Projects_Tile
               key={project.id}
