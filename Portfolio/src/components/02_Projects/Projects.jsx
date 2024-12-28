@@ -51,17 +51,20 @@ function Projects() {
   );
 
   return (
-    <section className='w-[100vw] flex justify-center p-4 transition-all duration-500 animate-slideInFromRight mb-[55px] md:mb-2'>
-      <div className="w-full flex flex-col items-center">
+    <section className='w-[100vw] min-h-screen flex justify-center p-6 transition-all duration-500 animate-slideInFromRight mb-[55px] md:mb-2'>
+      <div className="w-full max-w-7xl flex flex-col items-center">
         <input
           type="text"
           placeholder="Search projects..."
           value={searchQuery}
           onChange={handleSearch}
-          className="w-full md:w-[60%] p-2 mb-4 border rounded-md dark:bg-gray-700 dark:border-gray-600"
+          className="w-full md:w-[60%] p-4 mb-8 border rounded-lg shadow-sm 
+                   dark:bg-gray-800 dark:border-gray-700 focus:ring-2 
+                   focus:ring-blue-500 focus:border-transparent transition-all
+                   text-lg placeholder-gray-400 outline-none"
         />
         
-        <div className=" sectionCSS p-2 w-full grid grid-cols-1 gap-8 place-items-center">
+        <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 place-items-center">
           {filteredProjects.map(project => (
             <Projects_Tile
               key={project.id}
@@ -69,6 +72,8 @@ function Projects() {
               projectImage={project.projectImage}
               projectSummary={project.projectSummary}
               techStack={project.techStack}
+              githubLink={project.githubLink}
+              liveLink={project.liveLink}
             />
           ))}
         </div>

@@ -2,6 +2,8 @@ import React from 'react';
 import ProjectLaunchCard from './ProjectLaunchCard';
 
 function ProjectsShowcase({ projects }) {
+  if (projects.length === 0) return null;
+
   return (
     <section className="py-8">
       <h2 className="text-2xl font-bold mb-6">Upcoming Projects</h2>
@@ -14,6 +16,7 @@ function ProjectsShowcase({ projects }) {
             status={project.status}
             description={project.description}
             signupLink={project.signupLink}
+            type={project.type}
           />
         ))}
       </div>
