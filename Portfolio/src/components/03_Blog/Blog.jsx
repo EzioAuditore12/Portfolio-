@@ -75,8 +75,8 @@ function Blog() {
     : [];
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-gray-800">
-      <div className="max-w-7xl mx-auto px-4 py-12 space-y-16">
+    <div className="sectionCSS">
+      <div className="w-[90vw] md:w-[72vw] mx-auto py-12 px-4 md:px-8 lg:px-12 space-y-16">
         {/* Featured Post */}
         <FeaturedPost post={blogPosts.find(post => post.featured)} />
 
