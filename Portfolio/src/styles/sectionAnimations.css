@@ -1,0 +1,23 @@
+@keyframes sectionFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.section-fade-in {
+  opacity: 0;
+  animation: sectionFadeIn 0.8s ease-out forwards;
+}
+
+.delay-0 {
+  animation-delay: 2s;  /* Starts after Section1 animations complete */
+}
+
+.delay-1 {
+  animation-delay: 2.5s;
+} 
