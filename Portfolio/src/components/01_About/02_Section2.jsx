@@ -1,9 +1,20 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import { useDispatch, useSelector } from 'react-redux';
 import ProjectCard from '../../shared/01_projectCard/projectCard'
 import project1Img from './Assets/projectImages/projectEcommerce.png'
 import '../../styles/sectionAnimations.css'
+import { setAnimationsPlayed } from '../../Actions/animationSlice';
 
 function Section2() {
+  const dispatch = useDispatch();
+  const hasPlayed = useSelector((state) => state.animation.hasPlayed);
+  
+  useEffect(() => {
+    if (!hasPlayed) {
+      dispatch(setAnimationsPlayed());
+    }
+  }, [hasPlayed, dispatch]);
+
   const Projects = [
     { 
       name: 'Ecommerce', 
@@ -24,7 +35,7 @@ function Section2() {
   ];
   
   return (
-    <div className='sectionCSS p-6 section-fade-in delay-0 '>
+    <div className={`sectionCSS p-6 ${!hasPlayed ? 'section-fade-in delay-0' : ''}`}>
       <h1 className='text-3xl font-extrabold'>Featured Projects</h1>
       <p className='mb-4'>
         Here are some of my projects that I have worked on. Click on the project to view more details.
