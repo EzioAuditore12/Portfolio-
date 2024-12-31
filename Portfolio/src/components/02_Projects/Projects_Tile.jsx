@@ -10,14 +10,14 @@ function Projects_Tile({
     liveLink
 }) {
   return (
-    <div className='w-[400px] h-full p-4 flex flex-col bg-white dark:bg-gray-800 
+    <div className='w-full h-full p-4 lg:w-[80%] flex flex-col bg-white dark:bg-gray-800 
                     rounded-xl shadow-lg hover:shadow-2xl transform hover:-translate-y-1 
                     transition-all duration-300 overflow-hidden'>
        <div className="relative group">
          <img 
            src={projectImage} 
            alt={projectTitle} 
-           className="w-full h-[300px] object-center rounded-lg brightness-90 
+           className="w-full h-[310px] lg:h-[350px] object-center rounded-lg brightness-90 
                       group-hover:brightness-100 transition-all duration-300"
          />
          <div className="absolute bottom-4 right-4 flex gap-3 opacity-0 

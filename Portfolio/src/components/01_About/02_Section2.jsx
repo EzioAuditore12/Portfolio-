@@ -1,6 +1,7 @@
 import React from 'react'
 import ProjectCard from '../../shared/01_projectCard/projectCard'
 import project1Img from './Assets/projectImages/ByteBoulevardProject.png'
+import project2Img from './Assets/projectImages/AnimeImage.png'
 import '../../styles/sectionAnimations.css'
 
 function Section2() {
@@ -13,7 +14,7 @@ function Section2() {
     },
     {
       name: 'Daksh',
-      img: project1Img,
+      img: project2Img,
       psummary: "Hi my name is Daksh"
     },
     {
