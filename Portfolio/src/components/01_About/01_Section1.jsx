@@ -21,7 +21,7 @@ function Section1() {
 
   return (
     <div className='sectionCSS p-4 mt-[60px] md:mt-[82px] bg-gray-50'>
-      <div className={`h-[180px] w-[180px] rounded-[900px] border-[10px] border-white dark:border-gray-700 absolute top-8 md:top-[70px] z-1 hover:scale-105 hover:rotate-6 transition-all duration-500 ${show.image ? 'fade-in' : 'invisible'}`}>
+      <div className={`h-[180px] w-[180px] rounded-[900px] border-[10px] border-white dark:border-gray-700 absolute top-8 md:top-[70px] z-30 hover:scale-105 hover:rotate-6 transition-all duration-500 ${show.image ? 'fade-in' : 'invisible'}`}>
         <img src={profilePic} className='object-contain rounded-[900px]'/>
       </div>
       <h1 className={`mt-[80px] md:mt-[100px] text-3xl font-extrabold ${show.name ? 'slide-down' : 'invisible'}`}>
