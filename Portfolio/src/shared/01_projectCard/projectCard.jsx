@@ -7,7 +7,7 @@ function ProjectCard({
 }) {
   return (
     <div className='w-[95%] grid h-full rounded-md overflow-hidden'>
-        <img className='object-cover h-[300px] w-full' src={projectImage}/>
+        <img className='object-cover h-[400px] lg:h-[500px] xl:h-[450px] w-full md:object-fill' src={projectImage}/>
         <h2 className='text-start'>{projectTitle}</h2>
         <p>{projectSummary}</p>
         <span className='text-blue-500 cursor-pointer'>View more &rarr;</span>

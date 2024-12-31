@@ -1,6 +1,6 @@
 import React from 'react'
 import ProjectCard from '../../shared/01_projectCard/projectCard'
-import project1Img from './Assets/projectImages/projectEcommerce.png'
+import project1Img from './Assets/projectImages/ByteBoulevardProject.png'
 import '../../styles/sectionAnimations.css'
 
 function Section2() {

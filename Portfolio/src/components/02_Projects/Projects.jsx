@@ -3,16 +3,16 @@ import { useSearchParams } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import { setSearchQuery } from '../../Actions/projectsSlice';
 import Projects_Tile from './Projects_Tile';
-
+import projectImage1 from './Assets/ByteBoulevardProject.png'
 function Projects() {
   const [projects] = useState([
     {
       id: 1,
-      projectTitle: "Portfolio Website",
-      projectSummary: "Personal portfolio built with React and TailwindCSS",
+      projectTitle: "Ecommerce Project",
+      projectSummary: "Frontend for Ecommerce Project",
       techStack: ["React", "TailwindCSS", "Redux"],
-      projectImage: "/path-to-image",
-      githubLink: "https://github.com/yourusername/portfolio",
+      projectImage: projectImage1,
+      githubLink: "https://github.com/EzioAuditore12/ECommerce-UsingMERN.git",
       liveLink: "https://yourportfolio.com"
     },
     {
