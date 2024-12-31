@@ -5,8 +5,8 @@ import { FaUser, FaCode, FaBlog, FaFileAlt, FaEnvelope } from 'react-icons/fa';
 const menuItems = [
   { name: 'About', link: '/about', icon: <FaUser size={24} /> },
   { name: 'Projects', link: '/projects', icon: <FaCode size={24} /> },
-  { name: 'Blog', link: '/blog', icon: <FaBlog size={24} /> },
-  /*{ name: 'Resume', link: '/resume', icon: <FaFileAlt size={24} /> },*/
+  /*{ name: 'Blog', link: '/blog', icon: <FaBlog size={24} /> },*/
+  { name: 'Resume', link: '/resume', icon: <FaFileAlt size={24} /> },
   { name: 'Contact', link: '/contact', icon: <FaEnvelope size={24} /> },
 ];
 
