@@ -2,6 +2,7 @@ import React from 'react'
 import ProjectCard from '../../shared/01_projectCard/projectCard'
 import project1Img from './Assets/projectImages/ByteBoulevardProject.png'
 import project2Img from './Assets/projectImages/AnimeImage.png'
+import project3Img from './Assets/projectImages/SpanHamDetection.png'
 import '../../styles/sectionAnimations.css'
 
 function Section2() {
@@ -10,17 +11,17 @@ function Section2() {
       name: 'Ecommerce', 
       href: '#', 
       img: project1Img, 
-      psummary: 'This is a project which is built to made a ecoommerce webstore functionality'
+      psummary: 'This is the frontend of a ecommerece store using various famous webtools like react'
     },
     {
-      name: 'Daksh',
+      name: 'Spam Ham Detection',
+      img: project3Img,
+      psummary: "This is a project to find whether a message is spam or ham"
+    },
+    {
+      name: 'Anime Website',
       img: project2Img,
-      psummary: "Hi my name is Daksh"
-    },
-    {
-      name: 'Manas',
-      img: project1Img,
-      psummary: "Hi my name is Manas"
+      psummary: "It is a website that showcases use of bootstrap to build websites"
     },
   ];
   
