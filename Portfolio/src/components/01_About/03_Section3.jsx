@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react'
+import { useSelector, useDispatch } from 'react-redux';
 import reactIcon from './Assets/skillImages/React.svg'
 import nodeIcon from './Assets/skillImages/nodejs.svg'
 import mongoIcon from './Assets/skillImages/mongodb.svg'
@@ -8,7 +9,7 @@ import bootstrapIcon from './Assets/skillImages/bootstrap5.svg'
 import css from './Assets/skillImages/css.svg'
 import html from './Assets/skillImages/htnl5.svg'
 import '../../styles/sectionAnimations.css'
-
+import { setAnimationsPlayed } from '../../Actions/animationSlice';
 const skills = [
     {
         skillName: 'React',
@@ -45,10 +46,14 @@ const skills = [
 ]
 
 function Section3() {
-  const [visibleSkills, setVisibleSkills] = useState([]);
+  const dispatch = useDispatch();
+  const hasPlayed = useSelector((state) => state.animation.hasPlayed);
+  const [visibleSkills, setVisibleSkills] = useState(hasPlayed ? [...Array(skills.length).keys()] : []);
   const sectionRef = useRef(null);
 
   useEffect(() => {
+    if (hasPlayed) return;
+
     const observer = new IntersectionObserver(
       (entries) => {
         const [entry] = entries;
@@ -78,7 +83,13 @@ function Section3() {
         observer.disconnect();
       }
     };
-  }, []);
+  }, [hasPlayed]);
+
+  useEffect(() => {
+    if (!hasPlayed && visibleSkills.length === skills.length) {
+      dispatch(setAnimationsPlayed());
+    }
+  }, [hasPlayed, visibleSkills.length, dispatch]);
 
   return (
     <div ref={sectionRef} className='sectionCSS p-6 bg-gray-50 dark:bg-gray-800'>

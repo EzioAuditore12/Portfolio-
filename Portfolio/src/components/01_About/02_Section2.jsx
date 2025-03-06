@@ -8,6 +8,15 @@ import '../../styles/sectionAnimations.css';
 import { Link } from 'react-router-dom';
 
 function Section2() {
+  const dispatch = useDispatch();
+  const hasPlayed = useSelector((state) => state.animation.hasPlayed);
+  
+  useEffect(() => {
+    if (!hasPlayed) {
+      dispatch(setAnimationsPlayed());
+    }
+  }, [hasPlayed, dispatch]);
+
   const Projects = [
     { 
       name: 'Ecommerce', 
