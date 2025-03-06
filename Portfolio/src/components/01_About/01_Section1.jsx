@@ -1,28 +1,23 @@
 import React, { useEffect, useState } from 'react'
 import profilePic from './Assets/profileImage.jpg'
 import {Link} from 'react-router-dom'
-import { useDispatch, useSelector } from 'react-redux';
-import { setAnimationsPlayed } from '../../Actions/animationSlice';
 
-const Section1 = () => {
-  const dispatch = useDispatch();
-  const hasPlayed = useSelector((state) => state.animation.hasPlayed);
+
+function Section1() {
   const [show, setShow] = useState({
-    image: hasPlayed,
-    name: hasPlayed,
-    description: hasPlayed,
-    button: hasPlayed
+    image: false,
+    name: false,
+    description: false,
+    button: false
   });
 
   useEffect(() => {
-    if (!hasPlayed) {
-      setTimeout(() => setShow(prev => ({...prev, image: true})), 100);
-      setTimeout(() => setShow(prev => ({...prev, name: true})), 600);
-      setTimeout(() => setShow(prev => ({...prev, description: true})), 1100);
-      setTimeout(() => setShow(prev => ({...prev, button: true})), 1600);
-      dispatch(setAnimationsPlayed());
-    }
-  }, [hasPlayed, dispatch]);
+    // Stagger the animations
+    setTimeout(() => setShow(prev => ({...prev, image: true})), 100);
+    setTimeout(() => setShow(prev => ({...prev, name: true})), 600);
+    setTimeout(() => setShow(prev => ({...prev, description: true})), 1100);
+    setTimeout(() => setShow(prev => ({...prev, button: true})), 1600);
+  }, []);
 
   return (
     <div className='sectionCSS p-4 mt-[60px] md:mt-[82px] bg-gray-50'>
