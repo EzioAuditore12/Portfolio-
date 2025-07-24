@@ -1,8 +1,6 @@
-import React from 'react'
-
 function Resume() {
   const academic = [
-    { year: "Aug, 2022 - Present", degree: "B.Tech in Computer Science", institute: "Graphic Era Hill University Dehradun", score: "7.79/10.0" }
+    { year: "Aug, 2022 - Present", degree: "B.Tech in Computer Science", institute: "Graphic Era Hill University Dehradun", score: "7.83/10.0" }
   ]
 
   const projects = [
@@ -48,9 +46,9 @@ function Resume() {
   ]
 
   const skills = {
-    languages: ["JavaScript", "SQL", "C++", "C", "Java", "Python", "HTML", "CSS"],
-    toolsAndFrameworks: ["Git", "Bootstrap", "Tailwind", "React", "Node.js"],
-    technologies: ["PostgreSQL", "AWS (RDS, S3, EC2)"],
+    languages: ["JavaScript","Typescript", "SQL", "C++", "C", "Java", "Python", "HTML", "CSS"],
+    toolsAndFrameworks: ["Git", "Bootstrap", "Tailwind", "React", "Node.js","React Native"],
+    technologies: ["PostgreSQL", "AWS (RDS, S3, EC2)","MongoDB"],
     hardSkills: ["Debugging and Problem-solving"]
   }
 

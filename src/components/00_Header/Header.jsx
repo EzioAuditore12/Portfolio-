@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { toggleSidebar } from '../../Actions/sideBarSlice'
+import { toggleSidebar } from '../../actions/sideBarSlice'
 import MenuIcon from './Assets/01_MenuIcon';
 import ThemeSwitcher from './Assets/02_ToggleSwitch';
 import SocialProfiles from './Assets/04_socialProfiles';

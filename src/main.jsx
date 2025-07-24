@@ -6,7 +6,7 @@ import { BrowserRouter } from 'react-router-dom';
 import './styles/animations.css';
 import './styles/sectionAnimations.css';
 import { Provider } from 'react-redux';
-import store from './Store/store';
+import store from './store/store.js';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>

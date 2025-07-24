@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
-import { setSearchQuery } from '../../Actions/projectsSlice';
+import { setSearchQuery } from '../../actions/projectsSlice';
 import Projects_Tile from './Projects_Tile';
 import projectImage1 from './Assets/ByteBoulevardProject.png';
 import projectImage2 from './Assets/SpanHamDetection.png';
