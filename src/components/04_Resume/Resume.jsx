@@ -5,31 +5,25 @@ function Resume() {
 
   const projects = [
     {
-      name: "InkAlchemy",
-      github: "https://github.com/EzioAuditore12/InkAlchemy",
+      name: "ByteBoulevard Website",
+      github: "https://github.com/EzioAuditore12/ByteBoulevard",
       date: "Nov, 2024 - Nov, 2024",
       points: [
-        "InkAlchemy integrates AWS services like Textract, Translate, Comprehend, and Polly to provide text extraction, translation, sentiment analysis, and text-to-speech capabilities. The backend, built with Node.js and the AWS SDK, handles real-time processing of user inputs.",
-        "The frontend is built with React, offering a dynamic user interface that allows users to input text, upload images, and view real-time results. Tailwind CSS ensures a modern and responsive design for an enhanced user experience.",
-        "Additionally, InkAlchemy includes a copy-to-clipboard feature, enabling users to easily copy the processed results such as translations, sentiment analysis, and extracted text for convenience and efficiency."
+        "Developed a modern, responsive portfolio website using React and Tailwind CSS, focusing on clean UI and smooth user experience.",
+        "Implemented interactive components and dynamic layouts to showcase projects and skills effectively.",
+        "Optimized for fast load times and mobile compatibility, ensuring accessibility across devices.",
+        "Designed and deployed the site as a static frontend with no backend dependencies."
       ]
     },
     {
-      name: "ERP-PORTAL",
-      github: "https://github.com/EzioAuditore12/ERP-PORTAL",
+      name: "MinixOsCuda",
+      github: "https://github.com/EzioAuditore12/MinixOsCuda",
       date: "July, 2024 - July, 2024",
       points: [
-        "The ERP Portal project integrates MySQL for database management, allowing users to store and retrieve data efficiently. The backend is built with Node.js, which connects to the MySQL database to fetch and display data on the dashboard.",
-        "The frontend is designed using HTML and CSS, providing a user-friendly interface to view the data. The dashboard displays relevant details from the database in a clean and organized manner.",
-        "In addition, Blob data types are used to store images directly in the MySQL database, enabling the upload and retrieval of images seamlessly within the portal, enhancing its functionality and user experience."
-      ]
-    },
-    {
-      name: "VisualAnime",
-      github: "https://github.com/EzioAuditore12/VisualAnime",
-      date: "Nov, 2024 - Nov, 2024",
-      points: [
-        "Developed a responsive, anime-themed website using Bootstrap for the frontend, ensuring a mobile-first design that adapts seamlessly to various screen sizes. Integrated features like anime content display, user-friendly navigation, and visually engaging layouts. Employed HTML, CSS, and JavaScript to create a smooth and dynamic browsing experience, with a focus on clean UI and accessibility."
+        "Engineered a cross-platform desktop application using Tauri, React, and Tailwind CSS for the UI, enabling lightweight and secure performance.",
+        "Integrated CUDA and C for high-performance computing tasks, leveraging GPU acceleration for intensive operations.",
+        "Built modular features combining frontend interactivity with native backend processing.",
+        "Ensured seamless communication between the React frontend and native modules, providing a robust user experience."
       ]
     },
     {
@@ -47,7 +41,7 @@ function Resume() {
 
   const skills = {
     languages: ["JavaScript","Typescript", "SQL", "C++", "C", "Java", "Python", "HTML", "CSS"],
-    toolsAndFrameworks: ["Git", "Bootstrap", "Tailwind", "React", "Node.js","React Native"],
+    toolsAndFrameworks: ["Git", "Bootstrap", "Tailwind", "React", "Node.js","React Native","Tauri","ShadCN"],
     technologies: ["PostgreSQL", "AWS (RDS, S3, EC2)","MongoDB"],
     hardSkills: ["Debugging and Problem-solving"]
   }

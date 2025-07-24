@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import { setSearchQuery } from '../../actions/projectsSlice';
@@ -7,6 +7,7 @@ import projectImage1 from './Assets/ByteBoulevardProject.png';
 import projectImage2 from './Assets/SpanHamDetection.png';
 import projectImage3 from './Assets/AnimeImage.png';
 import projectImage4 from './Assets/INKALCHEMY.png';
+import projectImage5 from "./Assets/minixos.png"
 
 function Projects() {
   const [projects] = useState([
@@ -16,8 +17,8 @@ function Projects() {
       projectSummary: "Frontend for Ecommerce Project including responsive/adaptive design as well as integrating React and TailwindCSS",
       techStack: ["React", "TailwindCSS", "Redux", "Router"],
       projectImage: projectImage1,
-      githubLink: "https://github.com/EzioAuditore12/ECommerce-UsingMERN.git",
-      liveLink: "http://13.232.83.157:8256/",
+      githubLink: "https://github.com/EzioAuditore12/ByteBoulevard.git",
+      liveLink: "https://byte-boulevard.vercel.app/",
     },
     {
       id: 2,
@@ -45,6 +46,15 @@ function Projects() {
       liveLink: 'http://13.232.83.157:5173/',
       githubLink: 'https://github.com/EzioAuditore12/InkAlchemy.git',
       techStack: ["React", "Router", "TailwindCSS"]
+    },
+    {
+      id: 5,
+      projectTitle: "MinixOsCuda",
+      projectSummary: "Cross-platform desktop application built with Tauri, React, Tailwind CSS, CUDA, and C for high-performance computing tasks.",
+      techStack: ["Tauri", "React", "TailwindCSS", "CUDA", "C"],
+      projectImage: projectImage5, // Replace with an appropriate image if available
+      githubLink: "https://github.com/EzioAuditore12/MinixOsCuda",
+      liveLink: "", // No live link, leave empty or remove if not needed
     }
   ]);
 
