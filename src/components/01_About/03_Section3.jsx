@@ -15,7 +15,7 @@ import javaIcon from './Assets/skillImages/java.svg'
 import reactNativeIcon from './Assets/skillImages/react-native.svg'
 import nextJsIcon from './Assets/skillImages/nextjs.svg'
 import css from './Assets/skillImages/css.svg'
-import html from './Assets/skillImages/htnl5.svg'
+import html from './Assets/skillImages/html5.svg'
 import '../../styles/sectionAnimations.css'
 
 const skills = [
