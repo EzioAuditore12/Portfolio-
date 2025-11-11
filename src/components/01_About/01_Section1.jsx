@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import profilePic from './Assets/profileImage.jpg'
 import {Link} from 'react-router-dom'
 
@@ -28,7 +28,7 @@ function Section1() {
         Daksh Purohit
       </h1>
       <p className={`text-center ${show.description ? 'slide-up' : 'invisible'}`}>
-        I'm a beginner full-stack web developer with experience in React for front-end development and Express for back-end programming. Im passionate about learning new technologies and improving my skills to build dynamic, responsive web applications.
+        I am a dedicated full-stack developer passionate about building engaging and user-friendly digital experiences for both web and mobile platforms. I enjoy solving problems, learning new technologies, and continuously growing as a developer.
       </p>
       <Link to="/resume">
         <button className={`customButton group hover:scale-105 transition-all duration-300 ${show.button ? 'fade-in' : 'invisible'}`}>

@@ -1,4 +1,3 @@
-import React from 'react'
 import Section1 from './01_Section1'
 import Section2 from './02_Section2'
 import Section3 from './03_Section3'

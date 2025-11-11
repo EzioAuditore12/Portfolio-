@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import ProjectCard from '../../shared/01_projectCard/projectCard';
 import project1Img from './Assets/projectImages/ByteBoulevardProject.png';
 import project2Img from './Assets/projectImages/AnimeImage.png';

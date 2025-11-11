@@ -5,14 +5,34 @@ import { setSearchQuery } from '../../actions/projectsSlice';
 import Projects_Tile from './Projects_Tile';
 import projectImage1 from './Assets/ByteBoulevardProject.png';
 import projectImage2 from './Assets/SpanHamDetection.png';
-import projectImage3 from './Assets/AnimeImage.png';
-import projectImage4 from './Assets/INKALCHEMY.png';
+// import projectImage3 from './Assets/AnimeImage.png';
+// import projectImage4 from './Assets/INKALCHEMY.png';
 import projectImage5 from "./Assets/minixos.png"
+import projectImage6 from './Assets/Real-Estate.png'
+import projectImage7 from './Assets/AnimeImage.png'
 
 function Projects() {
   const [projects] = useState([
     {
+      id: 0,
+      projectTitle: "Rental PG Website",
+      projectSummary: "A web-based platform for tenants to view and managers to manage property listings with interactive maps and secure authentication.",
+      techStack: ["React", "Tanstack Router", "Typescript", "ShadCn", "MapBox API", "Spring Boot", "PostgreSQL"],
+      projectImage: projectImage6,
+      githubLink: "https://github.com/EzioAuditore12/Real-Estate-Project",
+      liveLink: "",
+    },
+    {
       id: 1,
+      projectTitle: "KnoziChat",
+      projectSummary: "A real-time Android chat application supporting one-on-one and group chats, built with React Native (Expo), Typescript, and a Node.js backend.",
+      techStack: ["React Native", "Expo", "Typescript", "React Query", "Zustand", "Hono.js", "Node.js", "PostgreSQL", "Socket.IO", "Redis", "BullMQ"],
+      projectImage: projectImage7,
+      githubLink: "https://github.com/EzioAuditore12/KnoziChat.git",
+      liveLink: "",
+    },
+    {
+      id: 2,
       projectTitle: "Ecommerce Project",
       projectSummary: "Frontend for Ecommerce Project including responsive/adaptive design as well as integrating React and TailwindCSS",
       techStack: ["React", "TailwindCSS", "Redux", "Router"],
@@ -21,7 +41,7 @@ function Projects() {
       liveLink: "https://byte-boulevard.vercel.app/",
     },
     {
-      id: 2,
+      id: 3,
       projectTitle: "Span-Ham Detection",
       projectSummary: "A project to find whether the entered message is spam or ham",
       techStack: ["HTML", "CSS", "JAVASCRIPT"],
@@ -30,31 +50,13 @@ function Projects() {
       liveLink: "https://spam-ham-detection-manas.onrender.com/",
     },
     {
-      id: 3,
-      projectTitle: 'Anime Website',
-      projectImage: projectImage3,
-      projectSummary: "It is a website that showcases the use of bootstrap to build websites",
-      liveLink: 'http://13.232.83.157:8257/',
-      githubLink: 'https://github.com/EzioAuditore12/VisualAnime.git',
-      techStack: ["BOOTSTRAP", "HTML", "CSS"]
-    },
-    {
       id: 4,
-      name: 'Ink Alchemy',
-      projectImage: projectImage4,
-      projectSummary: 'A website to use various AWS functionalities such as translate, sentimental analysis, and image to text',
-      liveLink: 'http://13.232.83.157:5173/',
-      githubLink: 'https://github.com/EzioAuditore12/InkAlchemy.git',
-      techStack: ["React", "Router", "TailwindCSS"]
-    },
-    {
-      id: 5,
       projectTitle: "MinixOsCuda",
       projectSummary: "Cross-platform desktop application built with Tauri, React, Tailwind CSS, CUDA, and C for high-performance computing tasks.",
       techStack: ["Tauri", "React", "TailwindCSS", "CUDA", "C"],
-      projectImage: projectImage5, // Replace with an appropriate image if available
+      projectImage: projectImage5,
       githubLink: "https://github.com/EzioAuditore12/MinixOsCuda",
-      liveLink: "", // No live link, leave empty or remove if not needed
+      liveLink: "",
     }
   ]);
 

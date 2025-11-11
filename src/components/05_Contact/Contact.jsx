@@ -1,5 +1,3 @@
-import React from 'react'
-
 function Contact() {
   const contactInfo = [
     {
@@ -34,8 +32,8 @@ function Contact() {
       <section className='sectionCSS p-6'>
         <h1 className='text-3xl font-bold'>Get in Touch</h1>
         <p className='text-center max-w-2xl'>
-          I'm currently looking for new opportunities and would love to hear from you. 
-          Whether you have a question or just want to say hi, I'll try my best to get back to you!
+          I am currently looking for new opportunities and would love to hear from you. 
+          Whether you have a question or just want to say hi, I will try my best to get back to you!
         </p>
       </section>
 

@@ -1,10 +1,19 @@
-import React, { useState, useEffect, useRef } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import reactIcon from './Assets/skillImages/React.svg'
 import nodeIcon from './Assets/skillImages/nodejs.svg'
 import mongoIcon from './Assets/skillImages/mongodb.svg'
 import javaScriptIcon from './Assets/skillImages/javascript.svg'
 import tailwindIcon from './Assets/skillImages/tailwind.svg'
 import bootstrapIcon from './Assets/skillImages/bootstrap5.svg'
+import postgreSqlIcon from './Assets/skillImages/postgreSql.svg'
+import springbootIcon from './Assets/skillImages/spring-boot.svg'
+import typeScriptIcon from './Assets/skillImages/typescript.svg'
+import expoIcon from './Assets/skillImages/expo.svg'
+import expressJsIcon from './Assets/skillImages/express-js.svg'
+import graphqlIcon from './Assets/skillImages/graphql.svg'
+import javaIcon from './Assets/skillImages/java.svg'
+import reactNativeIcon from './Assets/skillImages/react-native.svg'
+import nextJsIcon from './Assets/skillImages/nextjs.svg'
 import css from './Assets/skillImages/css.svg'
 import html from './Assets/skillImages/htnl5.svg'
 import '../../styles/sectionAnimations.css'
@@ -19,8 +28,44 @@ const skills = [
         skillIcon: nodeIcon
     },
     {
+      skillName: 'Spring Boot',
+      skillIcon: springbootIcon
+    },
+    {
+      skillName: 'Nextjs',
+      skillIcon: nextJsIcon
+    },
+    {
+      skillName: 'Typescript',
+      skillIcon: typeScriptIcon
+    },
+    {
         skillName: 'MongoDB',
         skillIcon: mongoIcon
+    },
+    {
+      skillName: 'Graphql',
+      skillIcon: graphqlIcon
+    },
+    {
+      skillName: 'React Native',
+      skillIcon: reactNativeIcon
+    },
+    {
+      skillName: 'Java',
+      skillIcon: javaIcon
+    },
+    {
+      skillName: 'Express Js',
+      skillIcon: expressJsIcon
+    },
+    {
+      skillName: 'Expo',
+      skillIcon: expoIcon
+    },
+    {
+      skillName: 'PostgreSql',
+      skillIcon: postgreSqlIcon
     },
     {
         skillName: 'JavaScript',
@@ -42,7 +87,7 @@ const skills = [
         skillName: 'HTML',
         skillIcon: html
     }
-]
+].sort((a, b) => a.skillName.localeCompare(b.skillName));
 
 function Section3() {
   const [visibleSkills, setVisibleSkills] = useState([]);

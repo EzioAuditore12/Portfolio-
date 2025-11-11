@@ -1,9 +1,31 @@
 function Resume() {
   const academic = [
-    { year: "Aug, 2022 - Present", degree: "B.Tech in Computer Science", institute: "Graphic Era Hill University Dehradun", score: "7.83/10.0" }
+    { year: "Aug, 2022 - Present", degree: "B.Tech in Computer Science", institute: "Graphic Era Hill University Dehradun", score: "7.90/10.0" }
   ]
 
   const projects = [
+    {
+      name: "Rental PG Website",
+      github: "https://github.com/EzioAuditore12/Real-Estate-Project",
+      date: "Sept, 2025 - Present",
+      points: [
+        "Developed a web-based platform allowing tenants to view and managers to manage property listings with interactive maps for location insight.",
+        "Frontend built using React + Tanstack Router with Typescript for type safety, ShadCn for UI components, and MapBox API for live property location.",
+        "Backend uses Spring Boot with Spring Security, JWT Authentication, and role-based authorization for secure interactions.",
+        "Data managed with PostgreSQL, connected via Spring Data JPA."
+      ]
+    },
+    {
+      name: "KnoziChat",
+      github: "https://github.com/EzioAuditore12/KnoziChat.git",
+      date: "July, 2025 - August, 2025",
+      points: [
+        "Developed a real-time Android chat application supporting one-on-one and group chats.",
+        "Built with React Native (Expo), Typescript, React Query, React Native Reusables, and Zustand for state management.",
+        "Backend uses Hono.js on Node.js, Redis for caching, BullMQ for background processing, and Socket.IO for real-time communication.",
+        "User data and chats stored in PostgreSQL via Drizzle ORM."
+      ]
+    },
     {
       name: "ByteBoulevard Website",
       github: "https://github.com/EzioAuditore12/ByteBoulevard",
@@ -34,15 +56,15 @@ function Resume() {
         "Collaborated on a web-based application to classify messages as spam or ham.",
         "Developed the front-end using HTML, CSS, and JavaScript for user interaction and message submission.",
         "Integrated a Flask-based backend with a CNN model designed by a teammate for real-time message prediction.",
-        "Gained experience in front-end devlopment and machine learning application integration."
+        "Gained experience in front-end development and machine learning application integration."
       ]
     }
   ]
 
   const skills = {
-    languages: ["JavaScript","Typescript", "SQL", "C++", "C", "Java", "Python", "HTML", "CSS"],
-    toolsAndFrameworks: ["Git", "Bootstrap", "Tailwind", "React", "Node.js","React Native","Tauri","ShadCN"],
-    technologies: ["PostgreSQL", "AWS (RDS, S3, EC2)","MongoDB"],
+    languages: ["JavaScript", "Typescript", "SQL", "C++", "C", "Java", "Python", "HTML", "CSS"],
+    toolsAndFrameworks: ["Git", "Bootstrap", "Tailwind", "React", "Node.js", "React Native", "Tauri", "ShadCN", "Spring Boot", "Express.js", "Hono.js", "Expo", "NativeWind", "Drizzle ORM"],
+    technologies: ["PostgreSQL", "AWS (RDS, S3, EC2)", "MongoDB", "Socket.IO", "Redis", "BullMQ"],
     hardSkills: ["Debugging and Problem-solving"]
   }
 
@@ -136,9 +158,15 @@ function Resume() {
       {/* Achievements Section */}
       <section className='sectionCSS p-6'>
         <h2 className='text-2xl font-bold w-full'>Scholastic Achievements</h2>
-        <div className='w-full'>
-          <p className='font-semibold'>Smart India Hackathon (Internal):</p>
-          <p>Successfully qualified in the University Internal Hackathon in both 2023 and 2024 among 100+ teams.</p>
+        <div className='w-full space-y-2'>
+          <div>
+            <p className='font-semibold'>Smart India Hackathon (Internal):</p>
+            <p>Successfully qualified in the University Internal Hackathon in both 2023 and 2024 among 100+ teams.</p>
+          </div>
+          <div>
+            <p className='font-semibold'>OpenHack 2025 (Finalist):</p>
+            <p>Selected as one of the 8 finalist teams in OpenHack 2025, hosted at IISc Bangalore, from over 2000+ registered teams.</p>
+          </div>
         </div>
       </section>
     </div>
