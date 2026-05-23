@@ -3,62 +3,88 @@ import { useSearchParams } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import { setSearchQuery } from '../../actions/projectsSlice';
 import Projects_Tile from './Projects_Tile';
-import projectImage1 from './Assets/ByteBoulevardProject.png';
-import projectImage2 from './Assets/SpanHamDetection.png';
 // import projectImage3 from './Assets/AnimeImage.png';
 // import projectImage4 from './Assets/INKALCHEMY.png';
-import projectImage5 from "./Assets/minixos.png"
+import projectImage5 from './Assets/minixos.png'
 import projectImage6 from './Assets/Real-Estate.png'
-import projectImage7 from './Assets/AnimeImage.png'
+import project0 from '../01_About/Assets/projectImages/KnoziChat.png'
+import project1 from '../01_About/Assets/projectImages/RagSphere.png'
 
 function Projects() {
   const [projects] = useState([
-    {
-      id: 0,
-      projectTitle: "Rental PG Website",
-      projectSummary: "A web-based platform for tenants to view and managers to manage property listings with interactive maps and secure authentication.",
-      techStack: ["React", "Tanstack Router", "Typescript", "ShadCn", "MapBox API", "Spring Boot", "PostgreSQL"],
-      projectImage: projectImage6,
-      githubLink: "https://github.com/EzioAuditore12/Real-Estate-Project",
-      liveLink: "",
-    },
-    {
-      id: 1,
-      projectTitle: "KnoziChat",
-      projectSummary: "A real-time Android chat application supporting one-on-one and group chats, built with React Native (Expo), Typescript, and a Node.js backend.",
-      techStack: ["React Native", "Expo", "Typescript", "React Query", "Zustand", "Hono.js", "Node.js", "PostgreSQL", "Socket.IO", "Redis", "BullMQ"],
-      projectImage: projectImage7,
-      githubLink: "https://github.com/EzioAuditore12/KnoziChat.git",
-      liveLink: "",
-    },
-    {
-      id: 2,
-      projectTitle: "Ecommerce Project",
-      projectSummary: "Frontend for Ecommerce Project including responsive/adaptive design as well as integrating React and TailwindCSS",
-      techStack: ["React", "TailwindCSS", "Redux", "Router"],
-      projectImage: projectImage1,
-      githubLink: "https://github.com/EzioAuditore12/ByteBoulevard.git",
-      liveLink: "https://byte-boulevard.vercel.app/",
-    },
-    {
-      id: 3,
-      projectTitle: "Span-Ham Detection",
-      projectSummary: "A project to find whether the entered message is spam or ham",
-      techStack: ["HTML", "CSS", "JAVASCRIPT"],
-      projectImage: projectImage2,
-      githubLink: "https://github.com/EzioAuditore12/ECommerce-UsingMERN.git",
-      liveLink: "https://spam-ham-detection-manas.onrender.com/",
-    },
-    {
-      id: 4,
-      projectTitle: "MinixOsCuda",
-      projectSummary: "Cross-platform desktop application built with Tauri, React, Tailwind CSS, CUDA, and C for high-performance computing tasks.",
-      techStack: ["Tauri", "React", "TailwindCSS", "CUDA", "C"],
-      projectImage: projectImage5,
-      githubLink: "https://github.com/EzioAuditore12/MinixOsCuda",
-      liveLink: "",
-    }
-  ]);
+  {
+    id: 0,
+    projectTitle: "KnoziChat",
+    projectSummary:
+      "A real-time Android chat application featuring offline-first messaging, AI-enabled group chats, and scalable one-to-one and group communication.",
+    techStack: [
+      "React Native",
+      "Expo",
+      "TypeScript",
+      "SQLite",
+      "NestJS",
+      "Socket.IO",
+      "FastAPI",
+      "LangChain",
+      "PostgreSQL",
+      "MongoDB",
+      "Redis"
+    ],
+    projectImage: project0,
+    githubLink: "https://github.com/EzioAuditore12/KnoziChat",
+    liveLink: "https://expo.dev/artifacts/eas/jD1GYnAXZ8PgSLRyHE3TST.apk",
+  },
+
+  {
+    id: 1,
+    projectTitle: "RagSphere",
+    projectSummary:
+      "A multi-modal RAG platform allowing users to upload PDFs and interact through a context-aware AI chatbot with semantic retrieval and live response streaming.",
+    techStack: [
+      "Next.js",
+      "Express.js",
+      "LangChain",
+      "PostgreSQL",
+      "pgvector",
+      "Redis",
+      "SSE",
+      "Unstructured"
+    ],
+    projectImage: project1,
+    githubLink: "https://github.com/EzioAuditore12/Multi-Modal-RAG",
+    liveLink: "https://multi-modal-rag-gamma.vercel.app/",
+  },
+
+  {
+    id: 2,
+    projectTitle: "Rental PG Website",
+    projectSummary:
+      "A web-based property management platform enabling tenants to explore and managers to manage listings with interactive maps and secure authentication.",
+    techStack: [
+      "React",
+      "Spring Boot",
+      "GraphQL",
+      "JWT",
+      "PostgreSQL",
+      "PostGIS",
+      "Mapbox API"
+    ],
+    projectImage: projectImage6,
+    githubLink: "https://github.com/EzioAuditore12/Real-Estate-Project",
+    liveLink: "",
+  },
+
+  {
+    id: 3,
+    projectTitle: "MinixOsCuda",
+    projectSummary:
+      "Cross-platform desktop application built with Tauri, React, Tailwind CSS, CUDA, and C for high-performance computing tasks.",
+    techStack: ["Tauri", "React", "TailwindCSS", "CUDA", "C"],
+    projectImage: projectImage5,
+    githubLink: "https://github.com/EzioAuditore12/MinixOsCuda",
+    liveLink: "",
+  }
+]);
 
   const [searchParams, setSearchParams] = useSearchParams();
   const dispatch = useDispatch();

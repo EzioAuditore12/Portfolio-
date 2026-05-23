@@ -17,8 +17,9 @@ function Projects_Tile({
          <img 
            src={projectImage} 
            alt={projectTitle} 
-           className="w-full h-[310px] lg:h-[350px] object-center rounded-lg brightness-90 
+           className="w-full h-[310px] lg:h-[350px] object-contain object-center rounded-lg bg-gray-100 dark:bg-gray-900 brightness-90 
                       group-hover:brightness-100 transition-all duration-300"
+           loading="lazy"
          />
          <div className="absolute bottom-4 right-4 flex gap-3 opacity-0 
                          group-hover:opacity-100 transition-opacity duration-300">

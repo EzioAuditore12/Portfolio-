@@ -1,38 +1,37 @@
 import { useState, useEffect } from 'react';
 import ProjectCard from '../../shared/01_projectCard/projectCard';
-import project1Img from './Assets/projectImages/ByteBoulevardProject.png';
-import project2Img from './Assets/projectImages/AnimeImage.png';
-import project3Img from './Assets/projectImages/SpanHamDetection.png';
-import project4Img from './Assets/projectImages/INKALCHEMY.png';
+import project1Img from './Assets/projectImages/KnoziChat.png';
+import project2Img from './Assets/projectImages/RagSphere.png';
+import project3Img from './Assets/projectImages/Real-Estate.png';
+import project4Img from '../02_Projects/Assets/minixos.png';
 import '../../styles/sectionAnimations.css';
 import { Link } from 'react-router-dom';
 
 function Section2() {
   const Projects = [
-    { 
-      name: 'Ecommerce', 
-      href: '#', 
-      img: project1Img, 
-      psummary: 'This is the frontend of an ecommerce store using various famous web tools like React',
-      websiteLink: 'http://13.232.83.157:8256/'
+    {
+      name: 'KnoziChat',
+      img: project1Img,
+      psummary: 'A real-time Android chat app with offline-first messaging and AI-enabled group chats.',
+      websiteLink: 'https://expo.dev/artifacts/eas/jD1GYnAXZ8PgSLRyHE3TST.apk'
     },
     {
-      name: 'Spam Ham Detection',
-      img: project3Img,
-      psummary: "This is a project to find whether a message is spam or ham",
-      websiteLink: 'https://spam-ham-detection-manas.onrender.com/'
-    },
-    {
-      name: 'Anime Website',
+      name: 'RagSphere',
       img: project2Img,
-      psummary: "It is a website that showcases the use of Bootstrap to build websites",
-      websiteLink: 'http://13.232.83.157:8257/'
+      psummary: 'A multi-modal RAG platform with PDF upload, semantic retrieval, and live AI response streaming.',
+      websiteLink: 'https://multi-modal-rag-gamma.vercel.app/'
     },
     {
-      name: 'Ink Alchemy',
+      name: 'Rental PG Website',
+      img: project3Img,
+      psummary: 'Property management platform with listing management, map integration, and secure authentication.',
+      websiteLink: 'https://github.com/EzioAuditore12/Real-Estate-Project'
+    },
+    {
+      name: 'MinixOsCuda',
       img: project4Img,
-      psummary: 'A website to use various AWS functionalities such as translate, sentiment analysis, and image to text',
-      websiteLink: 'http://13.232.83.157:5173/'
+      psummary: 'Cross-platform desktop app built with Tauri, React, Tailwind CSS, CUDA, and C.',
+      websiteLink: 'https://github.com/EzioAuditore12/MinixOsCuda'
     }
   ];
 
